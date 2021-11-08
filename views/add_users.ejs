@@ -1,0 +1,36 @@
+<%- include('layout/header') %>
+
+
+<div class="card" style="padding: 5% 25%">
+  <form  method="post" action="/add" >
+    <h3 style="text-align: center">Enter Image Details</h3>
+    <div class="form-group">
+      <label >Image Title</label>
+      <input
+        type="text"
+        class="form-control"
+        name="Title"
+        placeholder="Enter Title"
+      />
+    </div>
+    <div class="form-group">
+      <label >Image url</label>
+      <input type="text" name="URL" class="form-control" placeholder="URL" />
+    </div>
+    <div class="form-group">
+      <label >Details</label>
+      <input
+        type="text"
+        name="Details"
+        class="form-control"
+        placeholder="Details"
+      />
+    </div>
+    <div class="form-group form-check"></div>
+    <center>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </center>
+  </form>
+</div>
+
+<%- include('layout/footer')%>
